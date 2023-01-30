@@ -1,41 +1,7 @@
-# Website
+# 区块链基础教程
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+为纯小白准备区块链基础教程，在这份教程里将介绍区块链技术的诞生、区块链核心原理、区块链主要应用场景等。
 
-### Installation
 
-```
-$ yarn
-```
+本教程部分内容参考实体书[【区块链应用开发指南:业务场景剖析与实战 】](https://item.jd.com/12857373.html)。
 
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
