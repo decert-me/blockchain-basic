@@ -17,10 +17,10 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/">
-            区块链基础课程 - 5min ⏱️
+            to="/docs/bitcoin">
+            区块链基础课程 - 1天 ⏱️
           </Link>
-        </div>
+          </div>
       </div>
     </header>
   );

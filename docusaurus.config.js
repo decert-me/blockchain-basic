@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '区块链基础教程 | Decert.me',
+  title: 'Decert.me',
   tagline: '区块链基础教程',
   favicon: '/img/favicon.ico',
 
@@ -39,8 +39,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/decert-me/blockchain-basic/tree/main/',
         },
@@ -71,7 +69,6 @@ const config = {
             position: 'left',
             label: '区块链基础',
           },
-          {to: '/how_bitcoin_work', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/decert-me/blockchain-basic',
             label: 'GitHub',
