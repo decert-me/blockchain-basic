@@ -38,12 +38,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/decert-me/blockchain-basic/tree/main/',
         },
         blog: false,
         theme: {
@@ -72,9 +71,9 @@ const config = {
             position: 'left',
             label: '区块链基础',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/how_bitcoin_work', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/decert-me/blockchain-basic',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,7 +87,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/bitcoin',
               },
             ],
           },
