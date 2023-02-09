@@ -170,9 +170,9 @@ POA 优缺点非常明显，POA 性能非常好，缺点是过于中心化，对
 <details>
   <summary>区块链不可能三角</summary>
     <div>不可能三角是去中心化（Decentralization）、可扩展性（Scalability）、安全性（Security），三者不可兼得，三者只能得其二。
+      <img src="https://img.learnblockchain.cn/pics/20230209171809.png" alt="不可能三角" >
   </div>
 </details>
-
 
 
 
