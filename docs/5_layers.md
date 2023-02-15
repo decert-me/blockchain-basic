@@ -58,25 +58,35 @@ Layer2 是针对底层区块链（Layer1）扩容的一种链下解决方案，L
 
 
 
-你可以下载 [Breez](https://breez.technology/) 或者 [Blue Wallet](https://bluewallet.io/)，存入一些比特币，然后找到一个[支持闪电网络的商家](https://lightningnetworkstores.com/) 来试试闪电网络
-
-
-
 ### Rollup
 
-
-
-**Rollup 目前分为两种类型：Optimism Rollup（乐观 Rollup）和 ZK Rollup（零知识证明 Rollup）**，这两个 Rollup 的区别简单来说 Optimism Rollup 就是**假设所有交易都是诚实可信的**，把许多笔交易压缩成一笔交易提交给以太坊，**在提交后会有一段时间窗口（挑战期-目前是一周）**，任何人都可以质疑发起挑战来验证交易的真实性，但用户如果要将 OP Rollup 上的 ETH 转到以太坊上则需要等待挑战期结束后才可以得到最终确认。
-
-
-
-参考：https://101blockchains.com/blockchain-layer-2-vs-layer-3/
+以太坊上主要的 Layer2 扩容方案是 Rollup，Rollup 意思是卷起，Rollup的核心思想是把**由Rollup层负责执行交易，然后许多笔交易压缩成一笔交易提交给以太坊**。
 
 
 
-optimistic rollups
+Rollup 目前分为两种类型：**Optimistic Rollup（乐观 Rollup）和 ZK Rollup（零知识证明 Rollup）**，这两个 Rollup 的区别简单来说 Optimistic Rollup 是**乐观假设**从 Layer2 上执行的交易都是可信的，并批量提交到以太坊上，乐观 Rollup设置有一个挑战期（通常为一周左右），任何人发起挑战来验证交易的真实性，若挑战成功，原有交易被拒绝，并惩罚Layer2出块人。而 ZK Rollup 则是通过生成一个零知识证明来证明所有交易的有效性，相比Optimistic Rollup没有乐观假设，且有更高的数据压缩率，但为通用的计算生成零知识证明是一个难点，开发难度很大。
 
-zk-rollups 
+这是一个技术特性对比图：
+
+![](https://img.learnblockchain.cn/pics/20230215143350.png)
+
+
+
+目前乐观 Rollup 有 [Arbitrum](https://offchainlabs.com/) 、 [Optimism](https://optimism.io/) 、Boba network 等项目在运行，乐观 Rollup 可以实现 EVM 等效，已有在以太坊上的智能合约大部分不用做任何修改就可以直接部署到 这些 Rollup 上。
+
+
+
+经过 1 年的发展，现在 Layer2 上的交易量已经赶超了以太坊主网上的交易量。
+
+![image-20230215120513798](https://img.learnblockchain.cn/pics/20230215120521.png)
+
+这是一张以太坊与 Arbitrum 、 Optimism 交易量的对比图。
+
+
+
+目前 ZK Rollup 有 ZKSync、 StarkNet 等项目在运行，但都不具备 EVM 的等效性。在StarkNet上部署智能合约，开发人员需要学习Cairo 语言，是为STARK可验证程序构建的一种编程语言，ZKSync 目前主网的版本则仅支持转账及兑换操作。包括 [Scroll](https://scroll.io/)  和  [Polygon](https://polygon.technology/solutions/polygon-zkevm/) 在内的多个团队都在为实现 EVM 等效的 zkEVM 而努力，或许马上可以看到他们的上线。
+
+
 
 
 ### 侧链
@@ -92,6 +102,12 @@ zk-rollups
 ## Layer 3
 
 第三层通常是应用层 
+
+DApp
+
+金融应用程序、去中心化市场、游戏
+
+
 
 
 

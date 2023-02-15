@@ -2,6 +2,16 @@
 
 
 
+比特币白皮书：https://bitcoin.org/bitcoin.pdf
+
+
+
+精通比特币 - 中文电子版： 
+
+![](file:///Users/emmett/Downloads/dqvwm3c45e82ccccb83c3.pdf)
+
+
+
 这里有一个网站模拟区块链的运行
 
 https://blockchaindemo.io/
