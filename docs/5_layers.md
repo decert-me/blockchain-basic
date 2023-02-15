@@ -64,7 +64,7 @@ Layer2 是针对底层区块链（Layer1）扩容的一种链下解决方案，L
 
 
 
-Rollup 目前分为两种类型：**Optimistic Rollup（乐观 Rollup）和 ZK Rollup（零知识证明 Rollup）**，这两个 Rollup 的区别简单来说 Optimistic Rollup 是**乐观假设**从 Layer2 上执行的交易都是可信的，并批量提交到以太坊上，乐观 Rollup设置有一个挑战期（通常为一周左右），任何人发起挑战来验证交易的真实性，若挑战成功，原有交易被拒绝，并惩罚Layer2出块人。而 ZK Rollup 则是通过生成一个零知识证明来证明所有交易的有效性，相比Optimistic Rollup没有乐观假设，且有更高的数据压缩率，但为通用的计算生成零知识证明是一个难点，开发难度很大。
+Rollup 目前分为两种类型：**Optimistic Rollup（乐观 Rollup）和 ZK Rollup（零知识证明 Rollup）**，他们的主要区别是如何将交易数据发布到第一层， Optimistic Rollup 是**乐观假设**从 Layer2 上执行的交易都是可信的，并批量提交到以太坊上，乐观 Rollup设置有一个挑战期（通常为一周左右），任何人发起挑战来验证交易的真实性，若挑战成功，原有交易被拒绝，并惩罚Layer2出块人。而 ZK Rollup 则是通过生成一个零知识证明来证明所有交易的有效性，相比Optimistic Rollup没有乐观假设，且有更高的数据压缩率，但为通用的计算生成零知识证明是一个难点，开发难度很大。
 
 这是一个技术特性对比图：
 
@@ -72,7 +72,7 @@ Rollup 目前分为两种类型：**Optimistic Rollup（乐观 Rollup）和 ZK R
 
 
 
-目前乐观 Rollup 有 [Arbitrum](https://offchainlabs.com/) 、 [Optimism](https://optimism.io/) 、Boba network 等项目在运行，乐观 Rollup 可以实现 EVM 等效，已有在以太坊上的智能合约大部分不用做任何修改就可以直接部署到 这些 Rollup 上。
+目前乐观 Rollup 有 [Arbitrum](https://offchainlabs.com/) 、 [Optimism](https://optimism.io/) 、Boba network 等项目在运行，乐观 Rollup 可以实现 EVM 等效，已有在以太坊上的智能合约大部分不用做任何修改就可以直接部署到 这些 Rollup 上，
 
 
 
@@ -84,34 +84,39 @@ Rollup 目前分为两种类型：**Optimistic Rollup（乐观 Rollup）和 ZK R
 
 
 
-目前 ZK Rollup 有 ZKSync、 StarkNet 等项目在运行，但都不具备 EVM 的等效性。在StarkNet上部署智能合约，开发人员需要学习Cairo 语言，是为STARK可验证程序构建的一种编程语言，ZKSync 目前主网的版本则仅支持转账及兑换操作。包括 [Scroll](https://scroll.io/)  和  [Polygon](https://polygon.technology/solutions/polygon-zkevm/) 在内的多个团队都在为实现 EVM 等效的 zkEVM 而努力，或许马上可以看到他们的上线。
+目前 ZK Rollup 有 ZKSync、 StarkNet 等项目在运行，但都不具备 EVM 的等效性。在StarkNet上部署智能合约，开发人员需要学习Cairo 语言，是为STARK可验证程序构建的一种编程语言，ZKSync 目前主网的版本则仅支持转账及兑换操作。包括 [Scroll](https://scroll.io/)  和  [Polygon](https://polygon.technology/solutions/polygon-zkevm/) 在内的多个团队都在为实现 EVM 等效的 zkEVM 而努力，应该马上可以看到他们的主网上线。
 
 
 
 
-### 侧链
+
+### 侧链及其他
+
+另一个和 Layer2 类似的二层扩容方案是侧链， 侧链和以太坊L2解决方案的主要区别是，**Layer2继承以太坊主网络的安全性，而侧链依赖于自己的安全性**。一个流行的侧链是Polygon ，他使用自己的PoS共识，有自己的验证者。但是 Polygon 会定期把交易的状态提交到以太坊。
 
 
 
-**状态通道**
+在出现Rollup之前，状态通道、Plasma 等技术也是广泛讨论的扩容解决方案，目前采用度不高，有兴趣的读者可以自行研究。
+
+下图是以太坊链下扩容技术方案图。
 
 
+
+
+
+![](https://img.learnblockchain.cn/pics/20230215164740.png)
 
 
 
 ## Layer 3
 
-第三层通常是应用层 
+Layer3（第 3 层）目前行业还没有一致认可的定义，Vitalik 在他的文章 [什么样的 Layer3 有意义](https://vitalik.ca/general/2022/09/17/layer_3.html) 里提出了对 Layer3 的 3 个愿景：
 
-DApp
-
-金融应用程序、去中心化市场、游戏
-
-
+1. **L2 用于扩容，L3 用于自定义功能，例如隐私。**
+2. **L2 用于通用扩容，L3 用于自定义扩容**， 
+3. **L2 用于无信任扩展（rollups），L3 用于弱信任扩展（validiums）**。
 
 
 
-
-
-
+还有一些人，将 Layer2 上的应用层，称为第 3 层，例如 Uniswap 、AAVE 、MarkerDAO 等。
 
