@@ -1,8 +1,8 @@
 # 进一步学习
 
 
+比特币白皮书: [原版-英文](https://bitcoin.org/bitcoin.pdf) ， [中文版](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf)
 
-比特币白皮书：https://bitcoin.org/bitcoin.pdf
 
 
 
