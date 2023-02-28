@@ -14,7 +14,7 @@ const config = {
   url: 'https://decert.me',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/tutorial/block_basic/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -38,6 +38,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/decert-me/blockchain-basic/tree/main/',
@@ -67,7 +68,7 @@ const config = {
             type: 'doc',
             docId: 'bitcoin',
             position: 'left',
-            label: '区块链基础',
+            label: '区块链基础教程',
           },
           {
             href: 'https://github.com/decert-me/blockchain-basic',
@@ -84,7 +85,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/bitcoin',
+                to: '/bitcoin',
               },
             ],
           },
