@@ -11,30 +11,24 @@
 3. **Web 3.0**：**能读能写能拥有** ，最初由伯纳斯·李于 2006 年提出，更加强调用户的自主性，Web3  于 2014 年由Gavin Wood （Polkadot 创世人）提出，更加强调了去中心化概念与使用区块链技术创建用户可拥有的应用。 
 
    >  Web 3.0 与 Web3 概念上稍有区别，Web 3.0 强调互联网演进代际，Web3 表示使用区块链技术栈创建的应用。
-
-   
-
-   
+  
 
 ## Web3 技术堆栈
 
 现在的 Web 2.0 应用，通常的技术架构是这样的：
 
-<img src="/Users/emmett/BCProject/decert/blockchain-basic/docs/image-20230221145241296.png" alt="image-20230221145241296" style="zoom:50%;" />
+![Web 2.0 架构](https://img.learnblockchain.cn/pics/20230228113350.png!/scale/65)
 
 
 
-前端呈现应用的界面，也是用户交互的接口，前端所显示的内容通过 HTTP 请求后端服务器获取。后端服务器还会连接数据库及文件存储服务。数据库利用如 Mysql 、 PostgreSq等，来存储用户数据、应用运行数据等，文件存储用来保存图片、音视频流文件等。
+前端呈现应用的界面，也是用户交互的接口，前端所显示的内容通过 HTTP 请求后端服务器获取。后端服务器还会连接数据库及文件存储服务。数据库利用如 Mysql， PostgreSql 等，来存储用户数据、应用运行数据等，文件存储用来保存图片、音视频流文件等。
 
 
 
 而 Web3 应用，技术架构则有所不同：
 
 
-
-<img src="https://img.learnblockchain.cn/pics/20230221160849.png" alt="image-20230221160842741" style="zoom:50%;" />
-
-
+![](https://img.learnblockchain.cn/pics/20230221160849.png!/scale/65)
 
 
 
@@ -69,7 +63,6 @@ IPFS目标是取代HTTP去构建一个更好的去中心化的Web。**现有的H
 用户通过指向文件的内容（CID）而不是文件所处的位置（url）来访问文件，这种模式被称为基于内容的寻址，在 IPFS 网络中，使用`ipfs://file_cid` 形式访问文件。
 
 > 备注：由于IPFS 协议，目前浏览器支持都还不是很多，当前Brave、Firefox 已经在浏览器中加入了IPFS 协议，Chrome 还没有支持，要通过 ipfs 访问文件需要安装 `IPFS Companion` 浏览器插件，或通过 IPFS 网络来访问文件。
-
 
 
 > 需要注意的是：IPFS 不是一个链，而是一个点对点的文件存储访问（超媒体）协议。IPFS 背后的团队发布的 FileCoin 则是一个区块链，激励节点来存储数据。
