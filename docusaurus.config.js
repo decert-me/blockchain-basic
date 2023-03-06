@@ -71,6 +71,11 @@ const config = {
             label: '区块链基础教程',
           },
           {
+            label: 'Solidity 教程',
+            position: 'left',
+            href: 'https://decert.me/tutorial/learnsolidity/intro',
+          },
+          {
             href: 'https://github.com/decert-me/blockchain-basic',
             label: 'GitHub',
             position: 'right',
