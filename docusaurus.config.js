@@ -68,12 +68,12 @@ const config = {
             type: 'doc',
             docId: 'bitcoin',
             position: 'left',
-            label: '区块链基础教程',
+            label: '区块链基础',
           },
           {
             label: 'Solidity 教程',
             position: 'left',
-            href: 'https://decert.me/tutorial/learnsolidity/intro/',
+            href: 'https://decert.me/tutorial/solidity/intro/',
           },
           {
             href: 'https://github.com/decert-me/blockchain-basic',
@@ -89,8 +89,12 @@ const config = {
             title: '教程',
             items: [
               {
-                label: 'Tutorial',
+                label: '区块链基础',
                 to: '/bitcoin',
+              },
+              {
+                label: 'Solidity 教程',
+                href: 'https://decert.me/tutorial/solidity/intro/',
               },
             ],
           },
@@ -111,8 +115,12 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Blog',
+                href: 'https://learnblockchain.cn/people/13917',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/decert-me',
               },
             ],
           },

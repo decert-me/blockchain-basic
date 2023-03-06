@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        当你通过一个某个技术的测试之后，你可以选择在区块链上生成的的技能认真记录，此记录具有不可篡改的特性，具有很高的可信度。
+        当你通过一个某个技术的测试之后，你可以选择在区块链上生成技能认证记录，永久证明你的能力。
       </>
     ),
   },
