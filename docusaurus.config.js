@@ -60,7 +60,7 @@ const config = {
         title: 'Decert.me',
         logo: {
           alt: 'Decert Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         // 顶部菜单
         items: [
