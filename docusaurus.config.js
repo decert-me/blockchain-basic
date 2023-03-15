@@ -90,7 +90,7 @@ const config = {
             items: [
               {
                 label: '区块链基础',
-                to: '/bitcoin',
+                to: '/start',
               },
               {
                 label: 'Solidity 教程',

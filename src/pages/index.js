@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/bitcoin">
+            to="/start">
             区块链基础课程 - 1天 ⏱️
           </Link>
           </div>
@@ -30,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={` ${siteConfig.title}`}
+      description="Decert.me 交互式学习体验，每份努力都为自己背书">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
