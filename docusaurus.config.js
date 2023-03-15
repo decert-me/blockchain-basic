@@ -66,7 +66,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'bitcoin',
+            docId: 'start',
             position: 'left',
             label: '区块链基础',
           },
