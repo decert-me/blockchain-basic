@@ -168,6 +168,7 @@ nbits: 当前难度
 
 [blockchaindemo](https://blockchaindemo.io/)是模拟区块链的运行的网站，你可以自己动手试一试添加一些区块、添加一些节点，感受区块链的运行。
 
+> 另一个 Blockchain Demo:  https://andersbrownworth.com/blockchain/blockchain 也可以参考。
 
 
 
