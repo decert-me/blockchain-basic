@@ -7,6 +7,14 @@
 # Generated files
 .docusaurus
 .cache-loader
+.env
+
+scripts/published_articles.json
+scripts/.env
+
+scripts/myenv/
+
+.claude/
 
 # Misc
 .DS_Store
