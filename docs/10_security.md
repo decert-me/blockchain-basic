@@ -109,7 +109,7 @@
 
 **骗局特征：**
 - 自称是交易所、钱包、项目方的"客服"
-- 主动联系你，声称你的账户有问题
+- 主动联系你，声称你的[账户](https://learnblockchain.cn/tags/账户?map=EVM)有问题
 - 要求你提供助记词、私钥或转账验证
 
 **防范措施：**
@@ -123,7 +123,7 @@
 **骗局特征：**
 - 承诺不合理的高回报（如"日收益5%"、"躺赚"）
 - 需要拉人头，发展下线
-- 使用"DeFi"、"NFT"、"元宇宙"等热门概念包装
+- 使用"[DeFi](https://learnblockchain.cn/tags/DeFi?map=EVM)"、"[NFT](https://learnblockchain.cn/tags/NFT)"、"元宇宙"等热门概念包装
 
 **防范措施：**
 - ✅ 如果听起来好得不真实，那就是骗局
@@ -219,7 +219,7 @@
 
 ## 智能合约安全
 
-如果你要与智能合约交互，需要注意：
+如果你要与[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)交互，需要注意：
 
 ### 检查合约安全性
 
@@ -247,7 +247,7 @@
 了解这些漏洞可以帮助你评估项目风险：
 
 - **重入攻击（Reentrancy）**：著名的The DAO黑客事件就是利用了这个漏洞
-- **整数溢出（Integer Overflow）**：Solidity 0.8.0之前的版本容易受此影响
+- **整数溢出（Integer Overflow）**：[Solidity](https://learnblockchain.cn/tags/Solidity?map=EVM) 0.8.0之前的版本容易受此影响
 - **访问控制问题**：函数权限设置不当
 - **前端运行攻击（Front-running）**：MEV相关攻击
 
@@ -356,7 +356,7 @@
 **设备安全：**
 - [ ] 设备保持更新
 - [ ] 安装了杀毒软件
-- [ ] 不在公共网络下操作钱包
+- [ ] 不在公共网络下操作[钱包](https://learnblockchain.cn/tags/%E9%92%B1%E5%8C%85)
 - [ ] 定期清理浏览器缓存和扩展
 
 **信息安全：**
@@ -388,8 +388,8 @@ Web3给了我们前所未有的自由和控制权，但也要求我们承担相�
 
 **安全工具：**
 - [Revoke.cash](https://revoke.cash/) - 撤销代币授权
-- [Etherscan](https://etherscan.io/) - 以太坊区块链浏览器
-- [De.Fi Scanner](https://de.fi/scanner) - 钱包安全扫描
+- [Etherscan](https://etherscan.io/) - [以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)区块链浏览器
+- [De.Fi Scanner](https://de.fi/scanner) - [钱包](https://learnblockchain.cn/tags/%E9%92%B1%E5%8C%85)安全扫描
 
 **诈骗举报：**
 - [Chainabuse](https://www.chainabuse.com/) - 举报诈骗地址

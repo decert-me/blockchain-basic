@@ -93,24 +93,36 @@ def publish_article(filename, force=False):
         return published_info.get('lbc_article_id')
     
     content = open(filename, "r").read()
-        
-    user_id = 19178
-    category_id = 3 # get_category_id("以太坊")
-
-    tags = "区块链"
-    
-    article_featured = 1
-    article_level = 2
-    createday = "2025-02-09"
-
-    article_type = 2 # 翻译文章类型， 3： 转发 1：原创
 
     title = first_line_of_file(filename).replace("# ", "").strip()
+
+    # 使用 LLM 分析文章，获取摘要和关键词
+    try:
+        print(f"正在分析文章内容...")
+        analysis_result = llm_analyze.analyze_article(content)
+        summary = trim_summary(analysis_result.get('summary', title))
+        keywords = analysis_result.get('keywords', [])
+        tags = ','.join(keywords) if keywords else "区块链"
+        print(f"分析完成 - 摘要: {summary[:50]}...")
+        print(f"分析完成 - 关键词: {tags}")
+    except Exception as e:
+        print(f"⚠️  分析文章失败: {e}，使用默认值")
+        summary = title
+        tags = "区块链"
+
+    user_id = 13917
+    category_id = 4 # 通识   # 3: 比特币  以太坊": 5
+
+    article_featured = 1
+    article_level = 2
+    createday = "2025-12-09"
+
+    article_type = 2 # 翻译文章类型， 3： 转发 1：原创
 
     payload = {
         'title': title,
         'content': content,
-        'summary':  title,
+        'summary':  summary,
         'link': "",
         'author_id': user_id, # 指定用户 id 
         'category_id': category_id,
@@ -125,7 +137,7 @@ def publish_article(filename, force=False):
     if createday:
         payload['createday'] = createday
 
-    # print(urlencode(payload))
+    # print(payload)
 
     lbc_article_id = post_article(
         payload                       

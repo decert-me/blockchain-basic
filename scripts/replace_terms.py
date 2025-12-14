@@ -284,9 +284,7 @@ def main():
             formatter_class=argparse.RawDescriptionHelpFormatter,
             epilog='''
 示例:
-  python replace_terms.py                              # 默认处理 solana 目录
-  python replace_terms.py solana                      # 处理 solana 目录
-  python replace_terms.py eth/eips                    # 处理 eth/eips 目录
+  python replace_terms.py  docs                            # 默认处理 docs 目录
   python replace_terms.py bitcoin/协议/BOLT11.md      # 处理单个文件
             '''
         )

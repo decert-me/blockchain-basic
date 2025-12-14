@@ -29,7 +29,7 @@
 | **出块时间** | 约10分钟 | 约12-15秒 |
 | **共识机制** | POW | POS(2022年9月从POW切换) |
 | **智能合约** | 功能有限 | 完全支持复杂智能合约 |
-| **应用场景** | 主要是价值存储和转移 | DeFi、NFT、DAO、游戏等 |
+| **应用场景** | 主要是价值存储和转移 | [DeFi](https://learnblockchain.cn/tags/DeFi?map=EVM)、[NFT](https://learnblockchain.cn/tags/NFT)、DAO、游戏等 |
 | **货币供应** | 总量2100万枚(固定) | 无固定上限(通胀率逐年降低) |
 | **账户模型** | UTXO模型 | 账户余额模型 |
 
@@ -101,13 +101,13 @@ contract SimpleBank {
 - **金融合约**:借贷、保险、衍生品交易
 - **投票系统**:透明、防篡改的选举
 - **供应链管理**:商品溯源、质量追踪
-- **数字资产**:NFT、代币发行
+- **数字资产**:[NFT](https://learnblockchain.cn/tags/NFT)、代币发行
 - **组织治理**:DAO(去中心化自治组织)
 
 
 ## 以太坊账户
 
-以太坊使用账户模型(Account Model),而不是比特币的UTXO模型。以太坊中有两种类型的账户:
+以太坊使用账户模型(Account Model),而不是[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)的UTXO模型。以太坊中有两种类型的账户:
 
 ### 1. 外部账户(EOA - Externally Owned Account)
 
@@ -125,7 +125,7 @@ contract SimpleBank {
 - 有以太币余额
 - 有合约代码和存储
 
-合约账户就是部署在区块链上的智能合约,它有自己的地址,可以持有资产,按照代码逻辑自动执行。
+合约[账户](https://learnblockchain.cn/tags/账户?map=EVM)就是部署在区块链上的智能合约,它有自己的地址,可以持有资产,按照代码逻辑自动执行。
 
 
 ## Gas机制:防止滥用的经济设计
@@ -145,9 +145,9 @@ Gas是以太坊独有的概念,是执行交易和智能合约所需的"燃料"�
 - **Gas Limit**:用户愿意为交易支付的最大Gas数量
 - **Gas Used**:交易实际消耗的Gas数量
 
-**交易费用 = Gas Used × Gas Price**
+**交易费用 = Gas Used × [Gas](https://learnblockchain.cn/tags/Gas?map=EVM) Price**
 
-例如,一笔简单的以太币转账通常消耗21,000 Gas;而复杂的智能合约交互可能消耗几十万Gas。
+例如,一笔简单的以太币转账通常消耗21,000 [Gas](https://learnblockchain.cn/tags/Gas?map=EVM);而复杂的智能合约交互可能消耗几十万Gas。
 
 > 2021年8月,以太坊实施了EIP-1559升级中,改变了Gas费的计算方式:
 - **Base Fee(基础费用)**:由网络根据拥堵程度自动调整,这部分费用会被销毁(burn) ，使Gas费更可预测
@@ -157,7 +157,7 @@ Gas是以太坊独有的概念,是执行交易和智能合约所需的"燃料"�
 
 ## 以太坊虚拟机(EVM)
 
-以太坊虚拟机(Ethereum Virtual Machine, EVM)是以太坊的运行环境,是智能合约执行的核心。EVM 是**图灵完备**:可以执行任意复杂的计算(只要Gas足够)，为实现复杂的应用提供了基础。
+以太坊虚拟机(Ethereum Virtual Machine, EVM)是以太坊的运行环境,是智能合约执行的核心。[EVM](https://learnblockchain.cn/tags/EVM?map=EVM) 是**图灵完备**:可以执行任意复杂的计算(只要Gas足够)，为实现复杂的应用提供了基础。
 
 
 ### EVM兼容链
@@ -169,14 +169,14 @@ Gas是以太坊独有的概念,是执行交易和智能合约所需的"燃料"�
 - **Avalanche**
 - **Fantom**
 - **Arbitrum**(Layer2)
-- **Optimism**(Layer2)
+- **Optimism**([Layer2](https://learnblockchain.cn/tags/Layer2?map=EVM))
 
 这些链被称为"EVM兼容链",开发者可以轻松将以太坊应用迁移到这些链上,形成了一个庞大的EVM生态系统。
 
 
 ## 代币标准
 
-我们可以通知编写智能合约代码，在以太坊上发行各种代币,这些代币遵循一定的标准（智能合约的接口标准）,使得它们可以被钱包、交易所等应用识别和使用。
+我们可以通知编写智能合约代码，在以太坊上发行各种代币,这些代币遵循一定的标准（智能合约的接口标准）,使得它们可以被[钱包](https://learnblockchain.cn/tags/%E9%92%B1%E5%8C%85)、交易所等应用识别和使用。
 
 ### ERC-20:同质化代币标准
 
@@ -213,7 +213,7 @@ ERC-1155可以在一个合约中管理多种代币(既可以是同质化的,也�
 
 ### Pectra升级 - 2025年6月
 
-Pectra(Prague-Electra)升级带来了多项重要改进,包括账户抽象(EIP-7702)、提高验证者质押上限(EIP-7251)等,进一步提升以太坊的可用性和效率。
+Pectra(Prague-Electra)升级带来了多项重要改进,包括[账户](https://learnblockchain.cn/tags/账户?map=EVM)抽象([EIP-7702](https://learnblockchain.cn/tags/EIP7702?map=EVM))、提高验证者质押上限(EIP-7251)等,进一步提升以太坊的可用性和效率。
 
 ### Fusaka升级 - 2025年12月
 
@@ -223,21 +223,21 @@ Fusaka(Fulu-Osaka)升级带来了多项重要改进:
 - **新预编译合约**:引入 secp256r1 曲线作为预编译合约, 解锁了“设备原生签名”和“Passkey”功能
 
 
-在过去，主网在极端拥堵时Gas费仍可能较高。例如在2021 DEFI Summer 时，一笔交易需要数十甚至数百美金，且随着以太坊多次扩容升级,主网费用在持续降低。加上 Layer2 ，整个以太坊生态系统的吞吐量已提升至每秒数千笔交易,当前费用大幅降低。
+在过去，主网在极端拥堵时Gas费仍可能较高。例如在2021 DEFI Summer 时，一笔交易需要数十甚至数百美金，且随着以太坊多次扩容升级,主网费用在持续降低。加上 [Layer2](https://learnblockchain.cn/tags/Layer2?map=EVM) ，整个以太坊生态系统的吞吐量已提升至每秒数千笔交易,当前费用大幅降低。
 
 ## 以太坊生态:Web3的基础设施
 
 以太坊已经形成了庞大的生态系统,成为Web3世界的基础设施:
 
 ### DeFi(去中心化金融)
-- **Uniswap**:去中心化交易所,24小时交易量数十亿美元
+- **[Uniswap](https://learnblockchain.cn/tags/Uniswap?map=EVM)**:去中心化交易所,24小时交易量数十亿美元
 - **Aave**:去中心化借贷平台,管理资产超过百亿美元
 - **MakerDAO**:去中心化稳定币(DAI)发行协议
-- **Curve**:稳定币交易平台
+- **[Curve](https://learnblockchain.cn/tags/Curve?map=EVM)**:稳定币交易平台
 
 ### NFT平台
-- **OpenSea**:最大的NFT交易平台
-- **Blur**:专业NFT交易平台
+- **[OpenSea](https://learnblockchain.cn/tags/OpenSea)**:最大的NFT交易平台
+- **[Blur](https://learnblockchain.cn/tags/Blur)**:专业NFT交易平台
 - 各类数字艺术、头像、游戏道具项目
 
 ### Layer2扩容
@@ -248,8 +248,8 @@ Fusaka(Fulu-Osaka)升级带来了多项重要改进:
 
 ### 开发工具
 - **Remix**:在线Solidity IDE
-- **Foundry(首选)/Hardhat**:智能合约开发框架
-- **MetaMask**:最流行的以太坊钱包
+- **[Foundry](https://learnblockchain.cn/tags/Foundry?map=EVM)(首选)/Hardhat**:智能合约开发框架
+- **MetaMask**:最流行的以太坊[钱包](https://learnblockchain.cn/tags/%E9%92%B1%E5%8C%85)
 
 
 ## 以太坊对Web3的影响
@@ -273,20 +273,20 @@ Fusaka(Fulu-Osaka)升级带来了多项重要改进:
 
 以太坊通过智能合约技术,将区块链从简单的价值转移平台提升为可编程的去中心化计算平台。它的核心创新包括:
 
-- **智能合约**:实现了任意复杂的去中心化应用
-- **EVM**:提供了统一的执行环境
+- **[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)**:实现了任意复杂的去中心化应用
+- **[EVM](https://learnblockchain.cn/tags/EVM?map=EVM)**:提供了统一的执行环境
 - **Gas机制**:平衡了资源使用和网络安全
 - **代币标准**:让各种数字资产可以在以太坊上流通
 - **POS共识**:大幅降低了能源消耗
 
 从DeFi到NFT,从DAO到GameFi,以太坊已经成为Web3世界的基础设施。虽然还面临扩容等挑战,但通过Layer2等技术,以太坊生态正在不断完善和发展。
 
-如果说比特币证明了去中心化数字货币的可行性,那么以太坊则展示了区块链技术更广阔的应用前景。它不仅是一个技术平台,更是一个充满活力的创新生态系统。
+如果说[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)证明了去中心化数字货币的可行性,那么[以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)则展示了区块链技术更广阔的应用前景。它不仅是一个技术平台,更是一个充满活力的创新生态系统。
 
 
 ## 进一步学习
 
-想要深入学习以太坊和智能合约开发,可以参考:
+想要深入学习[以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)和[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)开发,可以参考:
 
 1. [Solidity官方文档](https://learnblockchain.cn/docs/solidity/)
 2. [以太坊系统培训课程](https://learnblockchain.cn/course/28)

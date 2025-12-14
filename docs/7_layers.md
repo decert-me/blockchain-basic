@@ -23,9 +23,9 @@
 
 ## Layer1
 
-第 1 层是我们常说的区块链，如比特币、以太坊、BSC 、Solana 等。 这些区块链在自己的区块链上根据共识处理并最终完成交易，
+第 1 层是我们常说的区块链，如比特币、以太坊、BSC 、[Solana](https://learnblockchain.cn/tags/Solana?map=Solana) 等。 这些区块链在自己的区块链上根据共识处理并最终完成交易，
 
-第 1 层区块链网络为开发dApps提供了基础架构，开发者可以在第1层网络上其他协议，比如我们看到MAKER DAO 稳定币协议、加密朋克 NFT 及 Uniswap DEX 协议等。
+第 1 层区块链网络为开发dApps提供了基础架构，开发者可以在第1层网络上其他协议，比如我们看到MAKER DAO 稳定币协议、加密朋克 [NFT](https://learnblockchain.cn/tags/NFT) 及 [Uniswap](https://learnblockchain.cn/tags/Uniswap?map=EVM) [DEX](https://learnblockchain.cn/tags/DEX?map=EVM) 协议等。
 
 随着链上应用不断增长，网络“吞吐量”无法满足快速增加的需求，经常导致网络拥堵。增加区块链网络自身处理能力，一个常见的方法是扩大区块大小，以便在单个区块里可以容纳更多的交易，以太坊社区也确实多次提高过区块大小限制，但提高更快意味着更慢网络传播速度，以及更大数据意味着节点需要更大的存储容量，会提高节点参与网络的门槛，使得网络更中心化；另一个是方法是以太坊之前尝试的分片（Sharding）扩容方案，将区块链数据分成不同的组（分片），每个分片负责网络活动中的不同数据子集。
 
@@ -47,8 +47,8 @@ Layer2 是针对底层区块链（Layer1）扩容的一种链下解决方案，L
 ![支付信道网状网络路由](https://img.learnblockchain.cn/pics/20230214173851.png)
 
 
-与比特币链上交易相比，闪电网络有几个好处：
-1. **更低的交易费用，对小额交易非常友好**，由于比特币链上交易需要用户之间相互竞价，比特币上一笔交易手续费通常在几美金，巅峰时期这需要几十美金，对于小额的交易，手续费往往比转移的金额还要多，闪电网络上通道费用是动态的，通常按转移的BTC数量的万分之几收取。
+与[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)链上交易相比，闪电网络有几个好处：
+1. **更低的交易费用，对小额交易非常友好**，由于比特币链上交易需要用户之间相互竞价，[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)上一笔交易手续费通常在几美金，巅峰时期这需要几十美金，对于小额的交易，手续费往往比转移的金额还要多，闪电网络上通道费用是动态的，通常按转移的BTC数量的万分之几收取。
 2. 在闪电网络协议下每秒可以发生的**支付数量没有基本限制**，仅受每个节点的容量和速度限制。
 3. **更好的隐私**，闪电网络支付的细节不会公开记录在区块链上。闪电网络支付可以通过许多连续的通道进行路由，每个节点运营商都可以通过他们的通道看到支付，但如果不相邻，他们将无法看到这些资金的来源或目的地。
 
@@ -79,7 +79,7 @@ Optimistic Rollup 采用**乐观假设**策略，假设从 Layer2 上执行的�
 - **Optimism**：采用 OP Stack 技术栈，支持一键发链
 - **Base**：由 Coinbase 基于 OP Stack 构建，面向大众市场
 
-Optimistic Rollup 的优势是可以实现 EVM 等效，现有的以太坊智能合约大部分不用做任何修改就可以直接部署。缺点是资金提现需要等待挑战期结束。
+Optimistic Rollup 的优势是可以实现 EVM 等效，现有的以太坊[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)大部分不用做任何修改就可以直接部署。缺点是资金提现需要等待挑战期结束。
 
 **2. ZK Rollup（零知识证明 Rollup）**
 
@@ -91,14 +91,14 @@ ZK Rollup 通过生成零知识证明（Zero-Knowledge Proof）来证明所有�
 - 更强的安全性保证
 
 **技术挑战：**
-- 为通用计算生成零知识证明难度大，开发复杂度高
+- 为通用计算生成[零知识证明](https://learnblockchain.cn/tags/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E)难度大，开发复杂度高
 - 证明生成需要较高的计算资源
 
 **主要项目：**
-- **ZKSync Era**：由 Matter Labs 开发，2023 年 3 月上线主网，支持 Solidity 开发
+- **ZKSync Era**：由 Matter Labs 开发，2023 年 3 月上线主网，支持 [Solidity](https://learnblockchain.cn/tags/Solidity?map=EVM) 开发
 - **Polygon zkEVM**：2023 年 3 月上线主网，实现了与以太坊 EVM 的高度等效性
-- **Scroll**：2023 年 10 月上线主网，专注于 EVM 等效的 zkEVM
-- **StarkNet**：使用 Cairo 语言，采用 STARK 证明系统，虽不兼容 EVM 但性能更高
+- **Scroll**：2023 年 10 月上线主网，专注于 EVM 等效的 [zkEVM](https://learnblockchain.cn/tags/zkEVM?map=EVM)
+- **StarkNet**：使用 [Cairo](https://learnblockchain.cn/tags/Cairo?map=Web3) 语言，采用 STARK 证明系统，虽不兼容 [EVM](https://learnblockchain.cn/tags/EVM?map=EVM) 但性能更高
 
 **技术特性对比：**
 
@@ -110,11 +110,11 @@ ZK Rollup 通过生成零知识证明（Zero-Knowledge Proof）来证明所有�
 
 ![image-20230215120513798](https://img.learnblockchain.cn/pics/20230215120521.png)
 
-上图是以太坊与 Arbitrum、Optimism 交易量的对比，可以看出 Layer2 已经成为以太坊生态不可或缺的重要组成部分。ZK Rollup 项目的成功上线也标志着零知识证明技术已经从理论走向成熟应用阶段。
+上图是以太坊与 Arbitrum、Optimism 交易量的对比，可以看出 Layer2 已经成为以太坊生态不可或缺的重要组成部分。ZK Rollup 项目的成功上线也标志着[零知识证明](https://learnblockchain.cn/tags/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E)技术已经从理论走向成熟应用阶段。
 
 #### 以太坊 Rollup 为中心路线图
 
-2020年10月，Vitalik 提出了以太坊以 Rollup 为中心的扩容路线图，这标志着以太坊扩容策略的重大转变（放弃分片方案）。这个路线图的核心思想是：**以太坊主网专注于提供安全性和数据可用性，而将交易执行和计算主要交给 Layer2 Rollup 来完成**。
+2020年10月，[Vitalik](https://learnblockchain.cn/tags/Vitalik?map=EVM) 提出了以太坊以 Rollup 为中心的扩容路线图，这标志着以太坊扩容策略的重大转变（放弃分片方案）。这个路线图的核心思想是：**以太坊主网专注于提供安全性和数据可用性，而将交易执行和计算主要交给 Layer2 Rollup 来完成**。
 
 > 相比分片需要对以太坊进行更深层的架构改造，Rollup 方案可以在现有技术框架下实现扩容，同时又可继承以太坊主网的安全性。
 
@@ -127,7 +127,7 @@ ZK Rollup 通过生成零知识证明（Zero-Knowledge Proof）来证明所有�
 
 **第二阶段（2022-2023）：生态爆发与技术成熟**
 - Layer2 上的 TVL（总锁仓量）快速增长，交易量超过以太坊主网
-- ZK Rollup 项目陆续上线主网，ZKSync Era、Polygon zkEVM、Scroll 等实现了 EVM 兼容
+- ZK Rollup 项目陆续上线主网，ZKSync Era、Polygon [zkEVM](https://learnblockchain.cn/tags/zkEVM?map=EVM)、Scroll 等实现了 [EVM](https://learnblockchain.cn/tags/EVM?map=EVM) 兼容
 - 出现了 Base（Coinbase）、UniChain、Lighter 等新一代 Rollup 链
 
 
@@ -140,16 +140,16 @@ ZK Rollup 通过生成零知识证明（Zero-Knowledge Proof）来证明所有�
 
 1. **完全去中心化**：逐步实现排序器、证明者和治理机制的去中心化，提升网络的抗审查性和安全性
 2. **跨 Rollup 互操作性**：建立标准化的跨 Rollup 通信协议，实现不同 Rollup 之间无缝的资产和数据转移，解决流动性割裂问题
-3. **ZK 技术的普及**：随着 ZK 证明生成效率的提升和成本的降低，ZK Rollup 有望成为主流扩容方案
+3. **ZK 技术的普及**：随着 ZK 证明生成效率的提升和成本的降低，ZK [Rollup](https://learnblockchain.cn/tags/Rollup) 有望成为主流扩容方案
 
 
 ### 侧链及其他方案
 
-另一个和 Layer2 类似的二层扩容方案是侧链， 侧链和以太坊L2解决方案的主要区别是，**Layer2继承以太坊主网络的安全性，而侧链依赖于自己的安全性**。一个流行的侧链是Polygon ，他使用自己的PoS共识，有自己的验证者。但是 Polygon 会定期把交易的状态提交到以太坊。
+另一个和 [Layer2](https://learnblockchain.cn/tags/Layer2?map=EVM) 类似的二层扩容方案是侧链， 侧链和以太坊L2解决方案的主要区别是，**Layer2继承以太坊主网络的安全性，而侧链依赖于自己的安全性**。一个流行的侧链是Polygon ，他使用自己的PoS共识，有自己的验证者。但是 Polygon 会定期把交易的状态提交到[以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)。
 
-在出现Rollup之前，状态通道、Plasma 等技术也是广泛讨论的扩容解决方案，但由于通用性不够、安全性不足等问题，被 Rollup 方案取代。
+在出现Rollup之前，状态通道、Plasma 等技术也是广泛讨论的扩容解决方案，但由于通用性不够、安全性不足等问题，被 [Rollup](https://learnblockchain.cn/tags/Rollup) 方案取代。
 
-下图是以太坊链下扩容技术方案图。
+下图是[以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)链下扩容技术方案图。
 
 
 ![](https://img.learnblockchain.cn/pics/20230215164740.png)
@@ -158,7 +158,7 @@ ZK Rollup 通过生成零知识证明（Zero-Knowledge Proof）来证明所有�
 
 ## Layer 3
 
-Layer3（第 3 层）目前行业还没有一致认可的定义，Vitalik 在他的文章 [什么样的 Layer3 有意义](https://vitalik.ca/general/2022/09/17/layer_3.html) 里提出了对 Layer3 的 3 个愿景：
+Layer3（第 3 层）目前行业还没有一致认可的定义，[Vitalik](https://learnblockchain.cn/tags/Vitalik?map=EVM) 在他的文章 [什么样的 Layer3 有意义](https://vitalik.ca/general/2022/09/17/layer_3.html) 里提出了对 Layer3 的 3 个愿景：
 
 1. **L2 用于扩容，L3 用于自定义功能，例如隐私。**
 2. **L2 用于通用扩容，L3 用于自定义扩容**， 
@@ -166,5 +166,5 @@ Layer3（第 3 层）目前行业还没有一致认可的定义，Vitalik 在他
 
 
 
-还有一些人，将 Layer2 上的应用层，称为第 3 层，例如 Uniswap 、AAVE 、MarkerDAO 等。
+还有一些人，将 [Layer2](https://learnblockchain.cn/tags/Layer2?map=EVM) 上的应用层，称为第 3 层，例如 [Uniswap](https://learnblockchain.cn/tags/Uniswap?map=EVM) 、[AAVE](https://learnblockchain.cn/tags/AAVE?map=EVM) 、MarkerDAO 等。
 

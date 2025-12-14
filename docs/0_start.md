@@ -21,11 +21,11 @@
 
 **第4篇：[区块链技术整体概述](/blockchain-basic/what_is_blockchain)**
 
-什么是区块链，为什么它是一种革命性的技术。第4篇介绍在比特币之后，区块链技术的发展，在智能合约引入之后，区块链的能力大大增强。不同的团队在探索使用各种不同的共识机制来扩展区块链的性能。
+什么是区块链，为什么它是一种革命性的技术。第4篇介绍在[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)之后，区块链技术的发展，在[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)引入之后，区块链的能力大大增强。不同的团队在探索使用各种不同的共识机制来扩展区块链的性能。
 
 **第5篇：[以太坊：可编程的区块链](/blockchain-basic/ethereum)**
 
-以太坊通过智能合约技术，将区块链从简单的价值转移工具提升为可编程的去中心化计算平台。第5篇介绍以太坊如何实现图灵完备的智能合约，以及它催生的去中心化金融（DeFi）、NFT等丰富的生态系统。
+以太坊通过智能合约技术，将区块链从简单的价值转移工具提升为可编程的去中心化计算平台。第5篇介绍[以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)如何实现图灵完备的[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)，以及它催生的去中心化金融（[DeFi](https://learnblockchain.cn/tags/DeFi?map=EVM)）、NFT等丰富的生态系统。
 
 **第6篇：[不同类型的区块链](/blockchain-basic/blockchains)**
 
@@ -33,7 +33,7 @@
 
 **第7篇：[区块链不同的层次](/blockchain-basic/layers)**
 
-由于区块链本身受不可能三角限制，开发人员考虑将更多的计算转移到链下，因此区块链出现了分层发展的趋势。第7篇介绍了比特币的闪电网络以及以太坊的 Rollup 等Layer 2解决方案。
+由于区块链本身受不可能三角限制，开发人员考虑将更多的计算转移到链下，因此区块链出现了分层发展的趋势。第7篇介绍了[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)的闪电网络以及[以太坊](https://learnblockchain.cn/tags/以太坊?map=EVM)的 [Rollup](https://learnblockchain.cn/tags/Rollup) 等Layer 2解决方案。
 
 **第8篇：[Web3 与存储协议](/blockchain-basic/web3_storage)**
 
@@ -41,15 +41,15 @@
 
 **第9篇：[区块链应用场景](/blockchain-basic/scenarios)**
 
-区块链到底有什么用？第9篇给出了广泛的应用场景：跨境支付与结算、资产数字化/代币化、DeFi（去中心化金融）、DAO组织、预测市场、数字存证/防伪、NFT/数字艺术品、游戏等领域。这些应用展示了区块链技术如何在各个领域产生颠覆性的影响。
+区块链到底有什么用？第9篇给出了广泛的应用场景：跨境支付与结算、资产数字化/代币化、[DeFi](https://learnblockchain.cn/tags/DeFi?map=EVM)（去中心化金融）、DAO组织、预测市场、数字存证/防伪、[NFT](https://learnblockchain.cn/tags/NFT)/数字艺术品、游戏等领域。这些应用展示了区块链技术如何在各个领域产生颠覆性的影响。
 
 **第10篇：[Web3 安全指南](/blockchain-basic/security)**
 
-"你的钱包，你的资产；你的私钥，你的加密货币"。在Web3世界中，你对资产拥有完全的控制权，但同时也承担着全部的安全责任。第10篇介绍了私钥管理、常见安全威胁、防护措施等Web3安全知识，帮助你保护自己的数字资产。
+"你的[钱包](https://learnblockchain.cn/tags/%E9%92%B1%E5%8C%85)，你的资产；你的私钥，你的加密货币"。在Web3世界中，你对资产拥有完全的控制权，但同时也承担着全部的安全责任。第10篇介绍了私钥管理、常见安全威胁、防护措施等Web3安全知识，帮助你保护自己的数字资产。
 
 **第11篇：[Web3 实操入门](/blockchain-basic/practical)**
 
-"纸上得来终觉浅，绝知此事要躬行"。第11篇将带你完成第一次Web3操作：创建钱包、发送交易、与DApp交互、参与DeFi、购买NFT等实际操作，将前面学到的理论知识转化为实践。
+"纸上得来终觉浅，绝知此事要躬行"。第11篇将带你完成第一次Web3操作：创建[钱包](https://learnblockchain.cn/tags/%E9%92%B1%E5%8C%85)、发送交易、与DApp交互、参与DeFi、购买NFT等实际操作，将前面学到的理论知识转化为实践。
 
 
 
