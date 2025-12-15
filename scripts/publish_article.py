@@ -117,7 +117,7 @@ def publish_article(filename, force=False):
     article_level = 2
     createday = "2025-12-09"
 
-    article_type = 2 # 翻译文章类型， 3： 转发 1：原创
+    article_type = 1 # 1：原创; 2: 翻译 ;  3：转发 
 
     payload = {
         'title': title,

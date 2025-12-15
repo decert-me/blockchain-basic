@@ -58,7 +58,7 @@
 
 ### 智能合约示例
 
-以下是一个简单的智能合约示例(使用Solidity语言):
+以下是一个简单的智能合约示例(使用 Solidity 语言编写):
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -125,10 +125,10 @@ contract SimpleBank {
 - 有以太币余额
 - 有合约代码和存储
 
-合约[账户](https://learnblockchain.cn/tags/账户?map=EVM)就是部署在区块链上的智能合约,它有自己的地址,可以持有资产,按照代码逻辑自动执行。
+合约[账户](https://learnblockchain.cn/tags/账户?map=EVM)就是部署在区块链上的智能合约,它有自己的地址,可以持有资产, 可以管理状态，所有的资金与状态的管理都按照代码逻辑严格执行。
 
 
-## Gas机制:防止滥用的经济设计
+## Gas机制
 
 Gas是以太坊独有的概念,是执行交易和智能合约所需的"燃料"。
 
@@ -158,6 +158,8 @@ Gas是以太坊独有的概念,是执行交易和智能合约所需的"燃料"�
 ## 以太坊虚拟机(EVM)
 
 以太坊虚拟机(Ethereum Virtual Machine, EVM)是以太坊的运行环境,是智能合约执行的核心。[EVM](https://learnblockchain.cn/tags/EVM?map=EVM) 是**图灵完备**:可以执行任意复杂的计算(只要Gas足够)，为实现复杂的应用提供了基础。
+
+> Solidity 与 EVM 的关系，类似于 Java 与 JVM 的关系：Solidity 是智能合约的编程语言，而 EVM 是执行这些代码的虚拟机运行环境。 
 
 
 ### EVM兼容链

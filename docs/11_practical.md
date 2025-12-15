@@ -49,15 +49,17 @@
 
 ### MetaMask界面介绍
 
-![Welcome to MetaMask: Your Complete Guide to the Crypto Wallet](https://img.learnblockchain.cn/pics/20251213232253.webp)
+
+![MetaMask 主界面](https://img.learnblockchain.cn/attachments/2025/12/T3e4m4ku693fee5332c40.png)
 
 **主要功能：**
-- **账户地址**：点击顶部可复制地址
+- **账户地址**：点击顶部左上角可复制地址
 - **余额**：显示当前网络的代币余额
 - **发送**：转账给他人
-- **接收**：显示二维码，接收转账
+- **收款**：显示二维码，接收转账
+- **代币**：查看持有的代币
 - **活动**：查看交易历史
-- **资产**：查看持有的代币和NFT
+
 
 **网络切换：**
 - 点击左上角的网络名称
@@ -101,9 +103,7 @@
    - https://www.alchemy.com/faucets/ethereum-sepolia
 
 **其他测试网：**
-- **Polygon Mumbai测试网**：https://faucet.polygon.technology/
 - **BSC测试网**：https://testnet.bnbchain.org/faucet-smart
-- **Arbitrum Sepolia**：https://faucet.quicknode.com/arbitrum/sepolia
 
 
 ## 第三步：发送第一笔交易
@@ -141,8 +141,8 @@
 
 点击交易后，你会看到：
 - **状态**：待处理 → 已确认
-- **从**：你的地址
-- **到**：接收方地址
+- **从（From）**：你的地址
+- **到（To）**：接收方地址
 - **Nonce**：这是你发出的第几笔交易
 - **金额**：转账数量
 - **Gas费用**：实际支付的手续费
@@ -260,6 +260,8 @@ Uniswap是最流行的去中心化交易所，我们在测试网上体验一下�
    - 在Uniswap界面切换网络到Sepolia
    - 如果钱包网络不匹配，MetaMask会提示切换
 
+![image.png](https://img.learnblockchain.cn/attachments/2025/12/8tRKfnQr693fef6934dfc.png)
+
 4. **兑换代币**
    - 在测试网上，你可以尝试兑换操作
    - 选择要兑换的代币对
@@ -271,11 +273,11 @@ Uniswap是最流行的去中心化交易所，我们在测试网上体验一下�
 
 与DApp交互时，你可能遇到不同类型的签名请求：
 
-**1. 连接钱包（最安全）**
+**1. 连接钱包（安全）**
 - 只是授权网站查看你的地址
 - 不会花费Gas，不会转移资产
 
-**2. 签名消息（较安全）**
+**2. 签名消息（需小心）**
 - 用于身份验证或登录
 - 不会花费Gas，不会直接转移资产
 - 但要确保你信任这个网站
@@ -299,9 +301,10 @@ Uniswap是最流行的去中心化交易所，我们在测试网上体验一下�
 
 ### 在OpenSea购买NFT（主网）
 
-> [OpenSea](https://learnblockchain.cn/tags/OpenSea) 测试网现在已经关闭, 如果要体验只能在正式的主网上进行。
+> [OpenSea](https://learnblockchain.cn/tags/OpenSea) 测试网现在已经关闭, 如果要体验只能在正式的主网上进行。因此你可能需要从朋友处或交易所购买一点以太坊，然后转入到你的钱包。
 
-1. **访问OpenSea **
+
+1. **访问OpenSea**
    - https://opensea.io
    - 点击右上角钱包图标
    - 连接MetaMask
