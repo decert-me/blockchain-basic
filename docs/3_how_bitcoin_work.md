@@ -1,4 +1,4 @@
-# 比特币是如何交易的
+# 比特币是如何运行的
 
 ## 如何持有和使用比特币
 
@@ -27,17 +27,13 @@
 
 当我们创建一个比特币地址（账户时），会首先生成一个随机数作为私钥，然后根据椭圆曲线算法(ECDSA)计算出公钥，然后在根据哈希运算及校验编码得到比特币地址。
 
-<details>
-  <summary>比特币地址格式</summary>
-    <div>目前比特币有三种地址类型：
-    <br/>
-    1. P2PKH 地址，也叫 “传统地址（Legacy address）”，以数字 “1” 开头，长度为 26 个到 36 个字符， 如：`1ABzp1eP5QGefi2DMPTfTL5SLmv7DivfNa`
-    <br/>
-    2. P2SH 地址，以数字 “3” 开头, 如：`3FRdnTq18LyNveWa1gQJcgp8qEnzijv5vR` .
-    <br/>
-    3. P2WPKH 地址，也叫 “Bech32 地址”，是一种高级的地址，以 “bc1” 开头.
-  </div>
-</details>
+**比特币地址格式**
+
+> 目前比特币有三种地址类型：
+>
+> 1. P2PKH 地址，也叫 "传统地址（Legacy address）"，以数字 "1" 开头，长度为 26 个到 36 个字符， 如：`1ABzp1eP5QGefi2DMPTfTL5SLmv7DivfNa`
+> 2. P2SH 地址，以数字 "3" 开头, 如：`3FRdnTq18LyNveWa1gQJcgp8qEnzijv5vR`
+> 3. P2WPKH 地址，也叫 "Bech32 地址"，是一种高级的地址，以 "bc1" 开头
 
 公钥及地址是公开的，私钥这是保密的，私钥推导地址的过程也是单向的，无法通过地址反推到公钥及私钥。
 
@@ -52,11 +48,9 @@
 
 一个 UTXO 在交易时可以产生多个 UTXO ，比特币的交易时不断消费老 UTXO 产生新的 UTXO 的过程，当一个 UTXO 被作为交易的输入后，就不再是未花费的了（STXO），在某个时间点，所有 UTXO 的集合都被称为 UTXO 集。比特币节点会追踪 UTXO 集，从而确定哪些代币未被花费，以及哪些人可以花费它们。从而避免双花（Double Spend）问题。
 
-<details>
-  <summary> 思考：最初的 UTXO 从哪里来的呢？</summary>
-    <div>最初的 UTXO都来自于区块挖掘奖励，这个称为 coinbase 交易，coinbase 交易可以没有 UTXO 输入，但是像所有正常输出一样，coinbase 交易的输出是新的 UTXO。
-  </div>
-</details>
+**思考：最初的 UTXO 从哪里来的呢？**
+
+> 最初的 UTXO都来自于区块挖掘奖励，这个称为 coinbase 交易，coinbase 交易可以没有 UTXO 输入，但是像所有正常输出一样，coinbase 交易的输出是新的 UTXO。
 
 UTXO 其实是包含一定数量的比特币（以 “聪（satoshi）” 为单位）以及花费这些比特币时所需满足的条件（叫做 “锁定脚本（locking script）”），当我们要使用一个 UTXO 时，就是对用私钥 UTXO 进行解锁（签名），以便使用其中的比特币。
 
@@ -97,6 +91,7 @@ UTXO 是不可分割的最小的交易单元，如果我们想要花费的比特
 
  那么一笔交易最终是如何进入区块链的 ？
 
+
 主要有这么几个阶段：
 
 1. 发起交易及交易签名
@@ -106,8 +101,9 @@ UTXO 是不可分割的最小的交易单元，如果我们想要花费的比特
 3. 使用工作量证明挖掘新区块
 
 
-
 ![](https://img.learnblockchain.cn/pics/20230202144210.png)
+
+想深入了解交易过程，可参考[剖析比特币交易生命周期，在转账时背后发生了什么？](https://learnblockchain.cn/article/21953) 。
 
 ### 发起交易及交易签名
 

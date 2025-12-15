@@ -19,9 +19,9 @@
 
 详细介绍了比特币的工作原理，包括去中心化、共识机制、区块链结构等。第3篇让我们了解到如何发起交易，交易如何打包上链。
 
-**第4篇：[区块链技术整体概述](/blockchain-basic/what_is_blockchain)**
+**第4篇：[理解区块链核心技术](/blockchain-basic/what_is_blockchain)**
 
-什么是区块链，为什么它是一种革命性的技术。第4篇介绍在[比特币](https://learnblockchain.cn/tags/比特币?map=BTC)之后，区块链技术的发展，在[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)引入之后，区块链的能力大大增强。不同的团队在探索使用各种不同的共识机制来扩展区块链的性能。
+什么是区块链，为什么它是一种革命性的技术。第4篇系统介绍区块链的核心技术，包括区块链的本质、[智能合约](https://learnblockchain.cn/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)的引入如何让区块链能力大大增强，以及不同的共识机制（POW、POS、POA）如何让去中心化网络达成一致。还介绍了区块链分叉这一独特的升级演化方式。
 
 **第5篇：[以太坊：可编程的区块链](/blockchain-basic/ethereum)**
 
